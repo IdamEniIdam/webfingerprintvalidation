@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import './App.css';
+import HomePage from './components/Homepage';
+import FingerPrint from './components/FingerPrint';
+import  ValidateduserID from './components/ValidatedUserID';
+import ConvertUserIDtoNIN from './components/ConvertUserIdTonin';
+import ErrorScreen from './components/ErrorScreen';
+import Invaliduserid from './components/InvalidUserid';
+import ValidatingninandFingerprint from './components/SendninFingerprint';
+import InvalidFingerprint from './components/InvalidFingerprint'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div className="">
+      <Router>
+          <Route exact path='/' component={HomePage} />
+          <Route exact path='/fingerprint' component={FingerPrint} />
+          <Route exact path='/validated-userid' component={ValidateduserID} />
+          <Route exact path='/converting-userid-to-nin' component={ConvertUserIDtoNIN} />
+          <Route exact path='/error' component={ErrorScreen} />
+          <Route exact path='/invaliduserid' component={Invaliduserid } />
+          <Route exact path='/fingerprintvalidation' component={ValidatingninandFingerprint} />
+          <Route exact path='/invalidfingerprint' component={InvalidFingerprint } />
+      </Router>
+</div>
+    )
+  }
 }
 
 export default App;
