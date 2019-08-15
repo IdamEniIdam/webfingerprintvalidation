@@ -8,7 +8,8 @@ import ConvertUserIDtoNIN from './components/ConvertUserIdTonin';
 import ErrorScreen from './components/ErrorScreen';
 import Invaliduserid from './components/InvalidUserid';
 import ValidatingninandFingerprint from './components/SendninFingerprint';
-import InvalidFingerprint from './components/InvalidFingerprint'
+import InvalidFingerprint from './components/InvalidFingerprint';
+import Dash from './components/Dash'
 
 
 
@@ -29,6 +30,7 @@ class App extends React.Component {
           <Route exact path='/invaliduserid' component={Invaliduserid } />
           <Route exact path='/fingerprintvalidation' component={ValidatingninandFingerprint} />
           <Route exact path='/invalidfingerprint' component={InvalidFingerprint } />
+          <Route exact path='/dash' component={Dash } />
       </Router>
 </div>
     )

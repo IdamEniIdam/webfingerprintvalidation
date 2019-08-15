@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React from 'react';
 import { AsyncStorage } from 'AsyncStorage';
 import Header from './HeaderBar';
 import Footer from './FooterBar';
@@ -29,7 +29,7 @@ class ErrorScreen extends React.Component {
     return (
       <div>
           <Header />
-          <div class="container">
+          <div className="container">
   
   <div style={{marginTop: '170px' }} className="row">
     <div className="col-sm-6 col-md-offset-3">  

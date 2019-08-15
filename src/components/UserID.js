@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React  from 'react';
 import { AsyncStorage } from 'AsyncStorage';
 
 
@@ -17,6 +17,10 @@ class GetUserID extends React.Component {
     };
   }
 
+  async componentDidMount() {
+
+  }
+
   handleUserIDChange = (e) => {
     var userID = e.target.value;
     console.log(this.state.prevInputLength);
@@ -29,8 +33,11 @@ class GetUserID extends React.Component {
   handleNameChange = event => {
     this.setState({ userid: event.target.value }, () => {
       this.validateName();
+     
     });
   };
+
+
 
   validateName = () => {
     const { userid } = this.state;
@@ -56,7 +63,7 @@ class GetUserID extends React.Component {
 
   render() {
     return (
-      <div class="container">
+      <div className="container">
         <div className="row" className="col-sm-4 col-md-offset-4">
           <text style={{fontSize: '30px',    fontFamily: 'ocr-b.ttf', color: 'green'}}>UserID Validation Service</text>
         </div>

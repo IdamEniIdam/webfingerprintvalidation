@@ -29,7 +29,7 @@ class Invaliduserid extends React.Component {
     return (
       <div>
           <Header />
-          <div class="container">
+          <div className="container">
   
   <div style={{marginTop: '130px' }} className="row">
     <div className="col-sm-6 col-md-offset-3">  

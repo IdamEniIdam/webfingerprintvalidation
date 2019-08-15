@@ -1,5 +1,5 @@
-import React, { Component }  from 'react';
-import { AsyncStorage } from 'AsyncStorage';
+import React from 'react';
+// import { AsyncStorage } from 'AsyncStorage';
 import Header from './HeaderBar';
 import Footer from './FooterBar';
 

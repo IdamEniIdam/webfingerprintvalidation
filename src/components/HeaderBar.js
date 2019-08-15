@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 
 
@@ -18,8 +18,8 @@ function Header() {
 <div className="collapse navbar-collapse" id="myNavbar">
   <ul style={{marginTop: '30px', justifyContent: 'center'}} className="nav navbar-nav">
     <li className="active"><Link to="/">Home</Link></li>
-    <li><Link to="">About</Link></li>
-    <li><Link to="">Contact</Link></li>
+    <li><Link to="#">About</Link></li>
+    <li><Link to="dash">Contact</Link></li>
   </ul>
   <ul className="nav navbar-nav navbar-right">
     <li><Link to="/"><span ></span><img alt='headerbarimage' style={{width: '150px', float: 'right', marginTop: '-10px'}}  src={require('./images/NIMC_logo_trans.png')} /></Link></li>

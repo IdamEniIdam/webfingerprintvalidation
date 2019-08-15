@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React from 'react';
 import { AsyncStorage } from 'AsyncStorage';
 import { ClipLoader } from 'react-spinners';
 
